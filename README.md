@@ -13,18 +13,18 @@ cd final_project/openai_model_code
 echo "OPENAI_API_KEY=sk-proj-your_real_api_key_here" > .env
 ```
 
-### 3️⃣ Create environment & install dependencies
+### 3️⃣ Setup Environment & Install Dependencies
+
+
 
 ```bash
-conda env create -f run_security_onion.yml
-conda activate security-onion-llm
-```
+python3 -m venv .venv
+source .venv/bin/activate      # macOS/Linux
+# .venv\Scripts\activate       # Windows
 
-*(Or manually:)*
-
-```bash
 pip install streamlit openai requests python-dotenv pandas plotly seaborn matplotlib
 ```
+
 
 ### 4️⃣ Run the application
 
