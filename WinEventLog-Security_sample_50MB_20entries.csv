@@ -1,0 +1,1049 @@
+_serial,_time,source,sourcetype,host,index,splunk_server,_raw
+0,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we1775srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we1775srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=516329
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1775srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1775srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x3b8
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Enabled Privileges:
+			SeAssignPrimaryTokenPrivilege
+			SeIncreaseQuotaPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeSystemtimePrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeShutdownPrivilege
+			SeSystemEnvironmentPrivilege
+			SeUndockPrivilege
+			SeManageVolumePrivilege
+
+Disabled Privileges:
+			-
+"
+1,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we6439srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we6439srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=16128
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we6439srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0x740
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-netmon.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xddc
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-netmon.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+2,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we8882srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we8882srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=527591
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8882srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8882srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+3,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we6915srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we6915srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=45181
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we6915srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0x594
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-regmon.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xc24
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-regmon.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+4,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we3614srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4624
+EventType=0
+Type=Information
+ComputerName=we3614srv.waynecorpinc.local
+TaskCategory=Logon
+OpCode=Info
+RecordNumber=44608
+Keywords=Audit Success
+Message=An account was successfully logged on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we3614srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x1B778B9
+	Logon GUID:		{CCFDB956-5500-C439-66AC-A2657C632FF9}
+
+Process Information:
+	Process ID:		0x0
+	Process Name:		-
+
+Network Information:
+	Workstation Name:	
+	Source Network Address:	::1
+	Source Port:		50784
+
+Detailed Authentication Information:
+	Logon Process:		Kerberos
+	Authentication Package:	Kerberos
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+"
+5,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we8936srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8936srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=12274
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8936srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0xcf0
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-winprintmon.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xddc
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-winprintmon.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+6,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we9833srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9833srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=518776
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we9833srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xeb0
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1b0
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe"" --ps2
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+7,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we4781srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4634
+EventType=0
+Type=Information
+ComputerName=we4781srv.waynecorpinc.local
+TaskCategory=Logoff
+OpCode=Info
+RecordNumber=37697
+Keywords=Audit Success
+Message=An account was logged off.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4781srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x179B967
+
+Logon Type:			3
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.
+"
+8,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we8287srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we8287srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=532934
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8287srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8287srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+9,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we5214srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4689
+EventType=0
+Type=Information
+ComputerName=we5214srv.waynecorpinc.local
+TaskCategory=Process Termination
+OpCode=Info
+RecordNumber=514820
+Keywords=Audit Success
+Message=A process has exited.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we5214srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x101c
+	Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-admon.exe
+	Exit Status:	0x1
+"
+10,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we8181srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8181srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=18492
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8181srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0x45c
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xddc
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+11,2016-08-28 17:59:00.000 MDT,WinEventLog:Security,WinEventLog:Security,we7854srv,botsv1,kraken.local,"08/28/2016 23:59:00 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4674
+EventType=0
+Type=Information
+ComputerName=we7854srv.waynecorpinc.local
+TaskCategory=Sensitive Privilege Use
+OpCode=Info
+RecordNumber=12556
+Keywords=Audit Success
+Message=An operation was attempted on a privileged object.
+
+Subject:
+	Security ID:		we7854srv\Administrator
+	Account Name:		Administrator
+	Account Domain:		we7854srv
+	Logon ID:		0x50749
+
+Object:
+	Object Server:	Security
+	Object Type:	Key
+	Object Name:	\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PERFLIB
+	Object Handle:	0x38c
+
+Process Information:
+	Process ID:	0xfc8
+	Process Name:	C:\Windows\System32\wbem\WmiPrvSE.exe
+
+Requested Operation:
+	Desired Access:	DELETE
+				READ_CONTROL
+				WRITE_DAC
+				WRITE_OWNER
+				ACCESS_SYS_SEC
+				Query key value
+				Set key value
+				Create sub-key
+				Enumerate sub-keys
+				Notify about changes to keys
+				Create Link
+				
+	Privileges:		SeSecurityPrivilege
+"
+12,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we1287srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we1287srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=526751
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1287srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1287srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+13,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we4176srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we4176srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=534684
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4176srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4176srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+14,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we4494srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we4494srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=517579
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4494srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xf18
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1b0
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+15,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we1215srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1215srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=512801
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1215srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x368
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-MonitorNoHandle.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1b0
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-MonitorNoHandle.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+16,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we2884srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we2884srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=544054
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we2884srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we2884srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x3b8
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Enabled Privileges:
+			SeAssignPrimaryTokenPrivilege
+			SeIncreaseQuotaPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeSystemtimePrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeShutdownPrivilege
+			SeSystemEnvironmentPrivilege
+			SeUndockPrivilege
+			SeManageVolumePrivilege
+
+Disabled Privileges:
+			-
+"
+17,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we9748srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we9748srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=543819
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we9748srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we9748srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x3b8
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Enabled Privileges:
+			SeAssignPrimaryTokenPrivilege
+			SeIncreaseQuotaPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeSystemtimePrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeShutdownPrivilege
+			SeSystemEnvironmentPrivilege
+			SeUndockPrivilege
+			SeManageVolumePrivilege
+
+Disabled Privileges:
+			-
+"
+18,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we5921srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we5921srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=540590
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we5921srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we5921srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+19,2016-08-28 17:58:59.000 MDT,WinEventLog:Security,WinEventLog:Security,we8001srv,botsv1,kraken.local,"08/28/2016 23:58:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4689
+EventType=0
+Type=Information
+ComputerName=we8001srv.waynecorpinc.local
+TaskCategory=Process Termination
+OpCode=Info
+RecordNumber=42818
+Keywords=Audit Success
+Message=A process has exited.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8001srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0xff0
+	Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-regmon.exe
+	Exit Status:	0x1
+"
+20,2016-08-28 17:58:58.000 MDT,WinEventLog:Security,WinEventLog:Security,we8500srv,botsv1,kraken.local,"08/28/2016 23:58:58 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we8500srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=532882
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8500srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8500srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+21,2016-08-28 17:58:58.000 MDT,WinEventLog:Security,WinEventLog:Security,we7818srv,botsv1,kraken.local,"08/28/2016 23:58:58 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we7818srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=514764
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we7818srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x7c4
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-winprintmon.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1b0
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-winprintmon.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+22,2016-08-28 17:58:57.000 MDT,WinEventLog:Security,WinEventLog:Security,we1248srv,botsv1,kraken.local,"08/28/2016 23:58:57 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4689
+EventType=0
+Type=Information
+ComputerName=we1248srv.waynecorpinc.local
+TaskCategory=Process Termination
+OpCode=Info
+RecordNumber=519689
+Keywords=Audit Success
+Message=A process has exited.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1248srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0xe54
+	Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-admon.exe
+	Exit Status:	0x1
+"
+23,2016-08-28 17:58:57.000 MDT,WinEventLog:Security,WinEventLog:Security,we4313srv,botsv1,kraken.local,"08/28/2016 23:58:57 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we4313srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=44896
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4313srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0x5c8
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-netmon.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xc24
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-netmon.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+24,2016-08-28 17:58:57.000 MDT,WinEventLog:Security,WinEventLog:Security,we9364srv,botsv1,kraken.local,"08/28/2016 23:58:57 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4689
+EventType=0
+Type=Information
+ComputerName=we9364srv.waynecorpinc.local
+TaskCategory=Process Termination
+OpCode=Info
+RecordNumber=523157
+Keywords=Audit Success
+Message=A process has exited.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we9364srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0xe08
+	Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-admon.exe
+	Exit Status:	0x1
+"
+25,2016-08-28 17:58:57.000 MDT,WinEventLog:Security,WinEventLog:Security,we8875srv,botsv1,kraken.local,"08/28/2016 23:58:57 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8875srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=523450
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we8875srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xad0
+	New Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1b0
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	""C:\Program Files\SplunkUniversalForwarder\bin\splunk-powershell.exe"" --ps2
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+"
+26,2016-08-28 17:58:56.000 MDT,WinEventLog:Security,WinEventLog:Security,we7727srv,botsv1,kraken.local,"08/28/2016 23:58:56 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we7727srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=537110
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we7727srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we7727srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
+27,2016-08-28 17:58:56.000 MDT,WinEventLog:Security,WinEventLog:Security,we1713srv,botsv1,kraken.local,"08/28/2016 23:58:56 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4634
+EventType=0
+Type=Information
+ComputerName=we1713srv.waynecorpinc.local
+TaskCategory=Logoff
+OpCode=Info
+RecordNumber=30035
+Keywords=Audit Success
+Message=An account was logged off.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we1713srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x12FE798
+
+Logon Type:			3
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.
+"
+28,2016-08-28 17:58:56.000 MDT,WinEventLog:Security,WinEventLog:Security,we4401srv,botsv1,kraken.local,"08/28/2016 23:58:56 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4703
+EventType=0
+Type=Information
+ComputerName=we4401srv.waynecorpinc.local
+TaskCategory=Authorization Policy Change
+OpCode=Info
+RecordNumber=533774
+Keywords=Audit Success
+Message=A user right was adjusted.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4401srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Account:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		we4401srv$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		0x15c4
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.10586.486_none_7640e086266ea227\TiWorker.exe
+
+Enabled Privileges:
+			SeSecurityPrivilege
+
+Disabled Privileges:
+			-
+"
